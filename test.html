@@ -13,6 +13,24 @@
             console.log(aNumber)
             console.log(Number.isInteger(aNumber))
         }
+        const carName = {};
+    function getData(){
+        const getName = ['pobi','woosup','dragon']
+        getName.forEach(element => {
+            carName[element] = 0
+        });
+        console.log(carName);
+        
+        const winNumberArray = Object.keys(carName)
+        winNumberArray.forEach(element => {
+            let oneGame = 4
+            const oneGameNumber = oneGame
+            if(oneGameNumber >= 4){
+                carName[element]++
+            }
+        });
+        console.log(carName)
+    }
     </script>
 </body>
 </html>
