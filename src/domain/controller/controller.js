@@ -15,7 +15,6 @@ class constroller {
     async run(){
         await this.getData();
         this.processData();
-        this.printData();
     }
 
     async getData(){
