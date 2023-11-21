@@ -1,4 +1,5 @@
 import error from "../constant/error";
+import number from "../constant/number";
 
 class validator{
     carNameValidate(carNameArray){
@@ -7,7 +8,7 @@ class validator{
             if(element.match(spacePattern)){
                 throw new Error(error.space)
             }
-            if(element.length > 5){
+            if(element.length > number.maxLength){
                 throw new Error(error.five)
             }
         });
@@ -19,7 +20,7 @@ class validator{
         if(!Number.isInteger(realTryNumber)){
             throw new Error(error.integer)
         }
-        if(realTryNumber < 1){
+        if(realTryNumber < number.minCount){
             throw new Error(error.range)
         }
     }
