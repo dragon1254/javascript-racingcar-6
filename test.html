@@ -20,16 +20,19 @@
             carName[element] = 0
         });
         console.log(carName);
-        
         const winNumberArray = Object.keys(carName)
-        winNumberArray.forEach(element => {
-            let oneGame = 4
-            const oneGameNumber = oneGame
-            if(oneGameNumber >= 4){
-                carName[element]++
+        let oneGameNumber = [4,3,3,8,7,6,6,1,2];
+        oneGameNumber.forEach((element, index) => {
+            let remain = index % 3
+            if(element >= 4){
+                carName[winNumberArray[remain]]++
             }
+            let progress = ''
+            for(let i = 0; i < carName[winNumberArray[remain]]; i++){
+                progress = progress + '-'
+            }
+            console.log(`${winNumberArray[remain]} : ${progress}\n`)
         });
-        console.log(carName)
     }
     </script>
 </body>
