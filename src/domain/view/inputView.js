@@ -1,5 +1,6 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
 import validator from "../validate/validate";
+import message from "../constant/message";
 
 const inputView = {
     inputName(){
