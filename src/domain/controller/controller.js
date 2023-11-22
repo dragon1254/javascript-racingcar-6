@@ -1,4 +1,3 @@
-import { MissionUtils } from "@woowacourse/mission-utils";
 import inputView from "../view/inputView";
 import outputView from "../view/outputView";
 import makeRace from "../util/makeRace";
