@@ -15,15 +15,16 @@
         }
         const carName = {};
     function getData(){
-        const getName = ['pobi','woosup','dragon']
+        const getName = ['pobi','woo','drago','zin']
         getName.forEach(element => {
             carName[element] = 0
         });
         console.log(carName);
         const winNumberArray = Object.keys(carName)
-        let oneGameNumber = [4,3,3,8,7,6,6,1,2];
+        let oneGameNumber = [4,3,3,8,7,6,6,1,2,3,4,5,6,7,8,9,7,3,8,1,3,6,1,7];
+        console.log(oneGameNumber.length)
         oneGameNumber.forEach((element, index) => {
-            let remain = index % 3
+            let remain = index % 4
             if(element >= 4){
                 carName[winNumberArray[remain]]++
             }
